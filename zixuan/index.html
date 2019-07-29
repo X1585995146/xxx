@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>优衣库</title>
+		<link rel="stylesheet" type="text/css" href="css/global.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<body>
+		<div class="rua">
+			<!--红色-->
+			<div class="xiu">
+				<!--蓝色-->
+				<iframe align="center" width="1280" height="90" src="header.html" 
+				frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no">
+				</iframe>
+				<div class="guding">
+					<img src="" /> <img src=""/> <img src=""/><img src=""/>
+				</div>
+				<div class="ss">
+					<div class="ccc">
+						<img src="img/pic_15.gif" />
+					</div>
+					<div class="sss">
+						<ul>
+							<li>
+								<a href="#">新作</a>
+							</li>
+							<li>
+								<a href="#">UT系列一览</a>
+							</li>
+							<li>
+								<a href="#">UT全商品</a>
+							</li>
+							<li>
+								<a href="#">超值精选</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--<div class="lunbo">	
+				</div>-->
+				<div class="box">
+					<ul class="box-in">
+						<li><img src="img/pic_16.jpg"></li>
+						<li><img src="img/pic_17.jpg"></li>
+						<li><img src="img/pic_18.jpg"></li>
+						<li><img src="img/pic_19.jpg"></li>
+						
+					</ul>
+					<div class="btn">
+						<a href="javascript:;" class="zuo">&lt;</a>
+						<a href="javascript:;" class="you">&gt;</a>
+					</div>
+					<div class="circle">
+						<span class="current">1</span>
+						<span>2</span>
+						<span>3</span>
+						<span>4</span>
+						
+					</div>
+				</div>
+
+				<div class="#qiehuan">
+					<div class="qie_1" style="border: 1px solid red;cursor: pointer;">
+						<span><a href="#" id="hid">即将开始贩售的新款UT系列</a></span>
+					</div>
+					<div class="qie_2">
+						<span><a href="">UT系列一览</a></span>
+					</div>
+				</div>
+				<div class="tup" >
+					<ul>
+						<li class="tu1"><img src="img/pic_20.gif" /></li>
+						<li class="tu2"><img src="img/pic_21.gif" /></li>
+						<li class="tu4"><img src="img/pic_22.gif" /></li>
+						<li class="tu3"><img src="img/pic_23.gif" /></li>
+						<li class="tu1"><img src="img/pic_24.gif" /></li>
+						<li class="tu2"><img src="img/pic_25.gif" /></li>
+						<li class="tu4"><img src="img/pic_26.gif" /></li>
+						<li class="tu3"><img src="img/pic_27.gif" /></li>
+						<li class="tu1"><img src="img/pic_28.gif" /></li>
+						<li class="tu2"><img src="img/pic_29.gif" /></li>
+						<li class="tu4"><img src="img/pic_30.gif" /></li>
+						<li class="tu3"><img src="img/pic_31.gif" /></li>
+						<li class="tu1"><img src="img/pic_35.gif" /></li>
+						<li class="tu2"><img src="img/pic_34.gif" /></li>
+						<li class="tu4"><img src="img/pic_33.gif" /></li>
+						<li class="tu3"><img src="img/pic_32.gif" /></li>
+
+					</ul>
+				</div>
+				<div class="tup1" >
+					<ul>
+						<li class="tu1"><img src="img/pic_28.gif" /></li>
+						<li class="tu2"><img src="img/pic_29.gif" /></li>
+						<li class="tu4"><img src="img/pic_30.gif" /></li>
+						<li class="tu3"><img src="img/pic_31.gif" /></li>
+						<li class="tu1"><img src="img/pic_35.gif" /></li>
+						<li class="tu2"><img src="img/pic_34.gif" /></li>
+						<li class="tu4"><img src="img/pic_33.gif" /></li>
+						<li class="tu3"><img src="img/pic_32.gif" /></li>
+						<li class="tu1"><img src="img/pic_20.gif" /></li>
+						<li class="tu2"><img src="img/pic_21.gif" /></li>
+						<li class="tu4"><img src="img/pic_22.gif" /></li>
+						<li class="tu3"><img src="img/pic_23.gif" /></li>
+						<li class="tu1"><img src="img/pic_24.gif" /></li>
+						<li class="tu2"><img src="img/pic_25.gif" /></li>
+						<li class="tu4"><img src="img/pic_26.gif" /></li>
+						<li class="tu3"><img src="img/pic_27.gif" /></li>
+					</ul>
+				</div>
+				
+				<!--测试-->
+				<div class="text">
+				<img src="img/111.gif" style="width: 100px; height: 100px;"/>
+				</div>
+				<div class="text2">
+				<img src="img/111.gif" style="width: 100px; height: 100px;"/>
+				</div>
+				
+				
+				<iframe align="center" width="1280" src="footer.html" 
+	frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no">
+				</iframe>
+			</div>
+		</div>
+         <script type="text/jscript" src="js/jquery-1.12.4.js"></script>
+         <script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+		<script src="js/index.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(".qie_1,.tup").hover(function(){
+					$(".tup").show();
+				},function(){
+					$(".tup").hide();
+				})
+				//切1
+				$(".tup .tu2 img").mouseenter(function(){
+					$(this).addClass("box-shadow");
+				}).mouseleave(function(){
+					$(this).removeClass("box-shadow");
+				})
+				//切2
+				$(".tup1 .tu2 img").mouseenter(function(){
+					$(this).addClass("box-shadow");
+				}).mouseleave(function(){
+					$(this).removeClass("box-shadow");
+				})
+				 
+
+			
+			})
+		</script>
+		
+	</body>
+
+</html>

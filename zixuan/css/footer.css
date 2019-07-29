@@ -1,0 +1,49 @@
+li {list-style:none;}
+.pic{
+	margin-top: 50px;
+	width:1500;
+	height: 100px;
+	float: left;
+	}
+.pic>img{
+	float:left;
+}
+
+.ulb {
+	float: left;
+	width: 1226px;
+	height: 51px;
+	display: inline-block;
+	text-indent: 50px;	
+	background-color: black;
+	color: white;
+}
+.uld>ul{
+	width: 1200px;
+	border: 1px solid blue;
+	border: 1p;
+}
+.ulb>ul>li {
+	float: left;
+	height: 51px;
+	line-height: 51px;
+	margin-left: 140px;
+	display: inline-block;
+	text-align: center;
+}
+.ulb>ul>li a {
+	text-decoration: none;
+	color: white;
+}
+
+.dibu>ul>li>a{
+	float: left;
+	height: 49px;
+	line-height: 49px;
+	margin-right: 10px;
+	white-space: nowrap;
+	
+}.dibu>ul>li>a{
+	color: black;
+	text-decoration: none;
+}

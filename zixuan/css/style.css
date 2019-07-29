@@ -1,0 +1,221 @@
+.rua{
+	width:1920px;
+	min-height:50px;
+	margin: 0 auto;
+}
+.xiu{
+	width:1280px;
+	margin:auto;
+}
+.ss{
+	width:1280px;
+	height: 89px;
+	line-height: 89px;
+	padding-top: 20px;
+}
+.ccc{
+	float: left;
+	width: 873px;
+	height:89px;
+	
+}
+.ccc img {
+	
+}
+.sss{
+	float: left;
+	width: 400px;
+	height:89px ;
+	
+}
+.sss ul li a{
+	float: left;
+	text-indent: 40px;
+	color: black;
+	text-decoration: none;
+}
+/*.lunbo {
+	margin-top: 20px;
+	float: left;
+	width: 1280px;
+	height:570px ;
+	background:url(../img/pic_16.jpg);
+}*/
+.qiehuan {
+	float: left;
+	width: 1278px;
+	height: 77px;
+	margin-top:30px;
+	border: 1px solid red;
+}
+
+.qie_1 {
+	float: left;
+	width: 637px;
+	height: 75px;
+	line-height: 75px;
+	border: 1px solid blue;
+	text-align: center;
+}
+.qie_2 {
+	float: left;
+	width: 637px;
+	height: 75px;
+	line-height: 75px;
+	border: 1px solid black;
+	text-align: center;
+}
+
+.qie_1 span a{
+	text-decoration: none;
+	color: black;
+}
+.qie_2 span a{
+	text-decoration: none;
+	color: black;
+}
+
+.tup {
+	float: left;
+	width: 1280px;
+	text-align: center;
+}
+.tup ul li img {
+	float: left;
+}
+
+
+.tu1 img:hover {
+	transform: rotate(2000deg);
+    transition: transform 20s linear;	
+	border-radius: 50%;
+}
+.tu4 img:hover{
+	transform: scale(1.1);
+}
+.tu3 img:hover{
+	transform: translate(5px,0px);
+}
+.box-shadow{
+	box-shadow:5px 5px 5px 5px #3C3C3C;
+}
+.tu2 img {
+	margin-left: 2px;
+	margin-right: 1px;
+}
+.tu3 img {
+	margin-left: 1px;
+}
+.tu4 {
+	margin-left: 3px;
+}
+
+.tup1 {
+	float: left;
+	width: 1280px;
+	text-align: center;
+}
+.tup1 ul li img {
+	float: left;
+}
+
+
+
+
+
+
+*{
+	margin:0px auto;
+	padding:0px;
+	}
+ul{
+	list-style: none;
+	}
+a{
+	text-decoration: none;
+	}
+.box{
+	width: 1280px;
+	height: 500px;
+	margin-top:100px;
+	position: relative;
+	overflow: hidden;
+	}
+.box-in{
+	width: 6000px;
+	position: absolute;
+	top:0px;
+	left: 0px;
+	}
+.box-in li{
+	float: left;
+	}
+.btn{
+	width: 730px;
+    height: 30px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin-left: -365px;
+    margin-top: -15px;
+    }
+.btn a{
+	width: 50px;
+	height: 70px;
+	background: black;
+	color: #fff;
+	line-height: 70px;
+	text-align: center;
+	font-size: 30px;
+	}
+.zuo{
+	
+	float: left;
+	}
+.you{
+	float: right;
+	}
+.circle{
+	width: 150px;
+	height: 30px;
+	bottom: 10px;
+	right:10px;
+	position: absolute;
+	}
+.circle span{
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background-color: white;
+	float: left;
+	text-align: center;
+	line-height: 18px;
+	margin-right: 5px;
+	cursor: pointer;
+	}
+.circle span.current{
+	background: purple;
+	}
+
+
+
+.text{
+	position:fixed;
+	top: 200px;
+	left: 200px;
+	
+}
+.text img:hover{
+	transform: rotate(9999999900000deg);
+    transition: transform 999999s linear;	
+}
+
+.text2{
+	position:fixed;
+	top: 200px;
+	right: 200px;	
+}
+.text2 img:hover{
+	transform: rotate(2000deg);
+    transition: transform 20s linear;		
+}

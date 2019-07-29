@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/global.css"/>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+	</head>
+	<body>
+		<div class="rua"><!--红色-->
+		<div class="xiu"><!--蓝色-->
+				<iframe align="center" width="1280" height="90" src="header.html" 
+					frameborder="no" border="0" 
+					marginwidth="0" marginheight="0" scrolling="no">
+				</iframe>
+				
+				<div class="C1">
+				用戶注冊
+				</div>
+				<form action="login1.html" method="get" id="formRegister">
+				<div class="bod">
+					<div class="11">
+					<ul>
+					<li class="o1">
+						<select style="width: 390px;height:50px;border: 0;
+						 	border-bottom: 2px solid #ababab;margin-top: 35px;">
+							<option>中国内地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;86</option>
+							<option>香港&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;852</option>
+							<option>台湾&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;853</option>
+						</select>
+					</li>
+						<li class="shouji"><input src="img/pic_7.gif" value="" 
+							placeholder="手机号" name="shouji"
+							style="width: 390px;height:60px;border: 0;
+						 	border-bottom: 2px solid #ababab;margin-top:30px;font-size: 20px;"/>	
+							<!--div id="shoujihao">手机号格式不正确</div>-->
+						</li>
+						<li class="22"><input src="img/pic_7.gif" value="" 
+							placeholder="验证码" name="yanzhengma"
+							style="width: 390px;height:60px;border: 0;
+						 	border-bottom: 2px solid #ababab;margin-top:23px; font-size: 20px;"/>	
+						</li>
+						<li class="22"><input src="img/pic_7.gif" value="" 
+							placeholder="密码" name="password"
+							style="width: 390px;height:60px;border: 0;
+						 	border-bottom: 2px solid #ababab;margin-top:30px; font-size: 20px;"/>	
+						   <!-- <div id="pwd_prompt">密码由英文字母和数字组成的4-10位字符</div>-->
+						</li>
+						<li class="22"><input src="img/pic_7.gif" value="" 
+							placeholder="确认密码" name="querenmima"
+							style="width: 390px;height:60px;border: 0;
+						 border-bottom: 2px solid #ababab;margin-top:30px; font-size: 20px;"/>	
+						</li>	
+						<li><input name="name" type="radio"style="margin-top: 10px;left: 10px;"/>
+						我已阅读并同意<span style="color: darkblue;">《优衣库会员注册协议》</span>
+						和<span style="color: darkblue;">《优衣库隐私政策》</span>
+						</li>
+					</ul>
+					<input type="submit" value="立即注册" class="denglu"/>
+					</div>
+				</div>
+				<input type="submit" value=""/>
+				</form>
+				<iframe align="center" width="1280" src="footer.html" 
+	frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no">
+				</iframe>
+       </div>
+       </div>
+       
+       
+       
+       	<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+	<script>
+			$(document).ready(function(){
+			//提交表单,调用验证函数
+			$("#formRegister").submit(function(){
+				var flag = true;
+				if (!checkFname()) flag = false;
+				if (!checkName()) flag = false;
+				if (!checkEmail()) flag = false;
+				
+				return flag;
+			})
+			//绑定失去焦点事件
+			$(".shouji").blur(checkFname);
+			$("#pwd").blur(checkName);
+			$("#repwd").blur(checkEmail);
+			
+		})
+
+	function checkFname(){
+		 	$(".shouji").blur(function () {
+			var mobile = $(this).val();
+			var regMobile = /^1\d{10}$/;
+			if (regMobile.test(mobile) == false) {
+				$("#shoujihao").html("手机号码不正确，请重新输入");
+				return false;
+			}
+			$("#shoujihao").html("");
+			return true;
+		})
+		 }
+		 	//密码
+		 	function checkName(){
+		 		
+		 	$("#pwd").blur(function () {
+			var pwd = $(this).val();
+			var reg = /^[a-zA-Z0-9]{4,10}$/;
+			if (reg.test(pwd) == false) {
+				$("#pwd_prompt").html("密码不能含有非法字符，长度在4-10之间");
+				return false;
+			}
+			$("#pwd_prompt").html("");
+			return true;
+		})
+		 	}
+		 	//再次输入密码
+		 	function checkEmail(){
+		 	$("#repwd").blur(function () {
+			var repwd = $("#repwd").val();
+			var pwd = $("#pwd").val();
+			if (pwd != repwd) {
+				$("#repwd_prompt").html("两次输入的密码不一致");
+				return false;
+			}
+			$("#repwd_prompt").html("");
+			return true;
+		})
+		 	}
+		 })
+	</script>
+	</body>
+</html>

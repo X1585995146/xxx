@@ -1,0 +1,124 @@
+.main {
+	width: 1360px;
+	margin: 0 auto;
+	margin-left: 280px;
+	margin-right: 280px;
+}
+.null {
+	float: left;
+	width: 454px;/*586*/
+	height: 47px;
+	line-height: 47px;
+}
+.nav {
+	height: 47px;
+	width: 600px;
+	float: left;
+	background: white;
+}
+        
+.nav li{
+	float: left;
+	line-height: 47px;
+	text-indent:25px ;
+}       
+.nav li a{
+	text-decoration: none;
+	color: black;
+}
+.pic_6 {
+	float: left;
+	width: 21px;
+	height: 47px;
+	line-height: 47px;
+	margin-left:5px ;
+}
+.nav_r {
+	width: 256px;
+	height: 47px;
+	float: left;
+	line-height: 47px;
+}
+.nav_r input {
+	width: 229px;
+	height: 34px;
+}
+.under {
+	border-bottom: solid;
+	border-right: none;
+	border-left:none ;
+	border-top:none ;
+	
+}
+
+.pic_8{
+	 float:left;
+	 width:90px;
+	 height:51px;
+}
+.pic_8 img {
+	float:right;
+}
+
+.nav_2 {
+	float:left;
+	width:545px;
+	height:51px;
+}
+.nav_2 ul li{
+	float:left;
+	line-height:51px;
+	text-indent:32px;
+}
+.nav_2 UL LI A{
+	COLOR:black;
+	text-decoration: none;
+}
+
+.nav_3 ul li{
+	float:left;
+	line-height:51px;
+	text-indent:35px;
+	background:#a1a1a1;
+}
+.nav_3{
+	
+}
+.wid {
+	width:1360px;
+	
+}
+.nav_3 ul li a{
+	color:white;
+	text-decoration:none;
+}
+.nav_3 ul li:nth-of-type(7){
+	 padding-right:32px
+}
+.nav_3 ul li:nth-of-type(8){
+	
+	background-color:#666666;
+	padding-right:32px
+}
+.nav_3 ul li:nth-of-type(9){
+	
+	background-color:#3c3c3c;
+	padding-right:32px
+}
+.nav3{
+	width:685px;
+	height:50px;
+	
+}
+
+.login {
+	width:1360px;
+	height:60px;
+	line-height:60px;
+	background-color:#f4f4f4;
+	font-size:30px;
+	color:black;
+	float:left;
+	font-family:"黑体";
+	text-indent:5px;
+}

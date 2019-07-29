@@ -1,0 +1,59 @@
+.rua{
+	width:1280px;
+	margin:auto;
+}
+.A1_1{
+	float:right;
+	margin-top:12px
+}
+.A1_1>li{
+	display:inline-block;
+	padding-right:5px;
+	border-right:1px dashed red
+}
+.A1_1>li:last-child{
+	border-right:0px
+}
+.B1{
+	width:1280px;
+	height:50px;
+}
+.B1_1{
+	float:left
+}
+.B1_2>.A1_1{
+	float:left;
+	margin-left:-40px
+}
+.B1_2>.A1_1>li{
+	padding-left:18px;
+	padding-right:18px
+}
+.B1_3{
+	width:685px;
+	height:50px;
+	float:right;
+	background-color:#a1a1a1;
+	margin-bottom:-6px;
+}
+.B1_3>ul{
+	list-style-type:none;
+	margin-left:-21px;
+	margin-top:-1px
+}
+.B1_3>ul>li{
+	display:inline-block;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:15px;
+	padding-bottom:15px;
+	margin-left:-5px;
+	color:white;
+	font-weight:bold
+}
+.B1_3>ul>li:nth-of-type(5){
+	background-color:#666666
+}
+.B1_3>ul>li:nth-of-type(6){
+	background-color:#3c3c3c
+}
